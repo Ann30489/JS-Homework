@@ -6,16 +6,78 @@
   font-weight: normal;
 } */
 
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
+}
+
+p {
+  padding: 0;
 }
 
 img {
   width: 100%;
-} */
+}
+
+body {
+  background-color: #000f1a;
+}
+
+.c-homework__title {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+  text-align: center;
+  margin: 45px 0;
+}
+.c-homework__list {
+  max-width: 500px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.c-homework__select {
+  margin: 0 auto;
+  width: 100%;
+}
+.c-homework__list p {
+  background: linear-gradient(to right, hsl(98 100% 62%), hsl(204 100% 59%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.c-homework__option {
+  color: #a0a8b1;
+}
+.c-homework__item {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  height: 38px;
+  padding: 20px 20px;
+  color: #063c8d;
+  background-color: rgb(194, 189, 189);
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.c-homework__item:focus {
+  border-color: #80bdff;
+  outline: none;
+}
