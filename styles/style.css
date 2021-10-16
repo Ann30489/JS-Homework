@@ -44,6 +44,7 @@ body {
   max-width: 500px;
   margin: 0 auto;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 .c-homework__select {
