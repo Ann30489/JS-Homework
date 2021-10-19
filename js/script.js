@@ -1,5 +1,7 @@
-const select = document.getElementById('js-select');
+const select = document.getElementsByClassName('c-homework__select');
 
-select.addEventListener('change', (e) => {
-    window.open(e.target.value);
-})
+
+for (var i = 0 ; i < select.length; i++) {
+    select[i].addEventListener('change', (i) => {
+        window.open(i.target.value);}) ; 
+ }
