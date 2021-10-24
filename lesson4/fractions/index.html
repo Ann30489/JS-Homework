@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Functions with fractions</title>
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Fraction calculator</h1>
+      <form action="#" method="get">
+        <div class="fraction-container">
+          <input id="numer1" type="number" value=""/>
+          <span class="fraction-line"></span>
+          <input id="denom1" type="number" value=""/>
+        </div>
+        <div class="button-container">
+          <button id="add">Add</button>
+          <button id="substract">Substract</button>
+          <button id="multiply">Multiply</button>
+          <button id="divide">Divide</button>
+        </div>
+        <div class="fraction-container">
+          <input id="numer2" type="number" value=""/>
+          <span class="fraction-line"></span>
+          <input id="denom2" type="number" value=""/>
+        </div>
+        <div class="result">
+        <span id="math-result">=</span>
+        </div>
+      </form>
+      <!-- <span id="math-result">=</span> -->
+      <h2>Reduce fraction</h2>
+      <div class="fraction-container2">
+        <input id="numer-red" type="number" value=""/>
+        <span class="fraction-line2"></span>
+        <input id="denom-red" type="number" value=""/>
+        <button id="reduce-btn">Reduce</button>
+        <div class="result">
+          <span id="reduce-result">=</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

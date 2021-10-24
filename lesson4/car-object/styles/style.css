@@ -1,0 +1,103 @@
+/* Fonts */
+/* @font-face {
+  font-family: 'font name';
+  src: url("#") format("format name");
+  font-style: normal;
+  font-weight: normal;
+} */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(31, 34, 34);
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  margin-top: 35px;
+  text-align: center;
+  color: white;
+}
+
+.img-container {
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.car-info {
+  display: flex;
+  flex-direction: column;
+  max-width: 465px;
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+
+#button-info {
+  cursor: pointer;
+  background-color: rgb(255, 153, 0);
+  outline: none;
+  color: black;
+  font-weight: bold;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.info-text {
+  background-color: grey;
+  text-align: center;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+}
+
+h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.input-description {
+  color: white;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+form {
+  max-width: 285px;
+  margin: 0 auto;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.result-container {
+  display: flex;
+  justify-content: center;
+}
+#distance-result {
+  color: rgb(255, 153, 0);
+  padding: 15px;
+  padding-top: 0;
+  margin-bottom: 15px;
+}
