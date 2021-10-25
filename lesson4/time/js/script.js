@@ -6,13 +6,6 @@ function createTime(hours, minutes, seconds) {
     seconds: seconds,
   };
 }
-let date = new Date();
-
-let currentTime = {
-  hours: date.getHours(),
-  minutes: date.getMinutes(),
-  seconds: date.getSeconds(),
-};
 
 // Function to show time set by user
 function showTime(hours, minutes, seconds) {
@@ -29,6 +22,7 @@ function showTime(hours, minutes, seconds) {
 
 // Function to show current time on the screen
 function getCurrentTime() {
+  let date = new Date();
   let currentTime = {
     hours: (date.getHours() < 10 ? '0' : '') + date.getHours(),
     minutes: (date.getMinutes() < 10 ? '0' : '') + date.getMinutes(),
@@ -63,7 +57,6 @@ function secondsToTime(timeTotalSeconds) {
   let hoursFinal = (hoursReduce < 10 ? '0' : '') + hoursReduce;
   let minutesFinal = (minutesRaw < 10 ? '0' : '') + minutesRaw;
   let secondsFinal = (secondsRaw < 10 ? '0' : '') + secondsRaw;
-
   return `${hoursFinal} : ${minutesFinal} : ${secondsFinal}`;
 }
 
@@ -120,8 +113,16 @@ btn.addEventListener("click", function () {
   document.getElementById("time-text").innerHTML = showTime(myHours, myMinutes, mySeconds);
 });
 
-btn2.addEventListener("click", function () {
-  document.getElementById("time-current").innerHTML = getCurrentTime();
+let realTimer;
+let timeElement = document.getElementById("time-current");
+const timer = () => {
+  realTimer = setInterval(() => {
+    timeElement.innerHTML = getCurrentTime();
+  }, 1000);
+
+}
+btn2.addEventListener("click", () => {
+  timer();
 });
 
 addHourBtn.addEventListener("click", function () {
