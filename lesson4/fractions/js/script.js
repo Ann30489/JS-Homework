@@ -1,4 +1,4 @@
-function Fraction(numerator, denominator) {
+function fraction(numerator, denominator) {
     return {
         numerator: numerator,
         denominator: denominator,
@@ -86,16 +86,16 @@ let denom1 = +document.getElementById("denom1").value;
 let numer2 = +document.getElementById("numer2").value;
 let denom2 = +document.getElementById("denom2").value;
 
-let frac1 = Fraction(numer1, denom1);
-let frac2 = Fraction(numer2, denom2);
+let frac1 = fraction(numer1, denom1);
+let frac2 = fraction(numer2, denom2);
 
 document.getElementById("add").addEventListener("click", function () {
     numer1 = +document.getElementById("numer1").value;
     denom1 = +document.getElementById("denom1").value;
     numer2 = +document.getElementById("numer2").value;
     denom2 = +document.getElementById("denom2").value;
-    frac1 = Fraction(numer1, denom1);
-    frac2 = Fraction(numer2, denom2);
+    frac1 = fraction(numer1, denom1);
+    frac2 = fraction(numer2, denom2);
 
     document.getElementById("math-result").innerHTML = addFrac(frac1, frac2);
 });
@@ -105,8 +105,8 @@ document.getElementById("substract").addEventListener("click", function () {
     denom1 = +document.getElementById("denom1").value;
     numer2 = +document.getElementById("numer2").value;
     denom2 = +document.getElementById("denom2").value;
-    frac1 = Fraction(numer1, denom1);
-    frac2 = Fraction(numer2, denom2);
+    frac1 = fraction(numer1, denom1);
+    frac2 = fraction(numer2, denom2);
     document.getElementById("math-result").innerHTML = substractFrac(frac1, frac2);
 });
 
@@ -115,8 +115,8 @@ document.getElementById("multiply").addEventListener("click", function () {
     denom1 = +document.getElementById("denom1").value;
     numer2 = +document.getElementById("numer2").value;
     denom2 = +document.getElementById("denom2").value;
-    frac1 = Fraction(numer1, denom1);
-    frac2 = Fraction(numer2, denom2);
+    frac1 = fraction(numer1, denom1);
+    frac2 = fraction(numer2, denom2);
     document.getElementById("math-result").innerHTML = multiplyFrac(frac1, frac2);
 });
 
@@ -125,8 +125,8 @@ document.getElementById("divide").addEventListener("click", function () {
     denom1 = +document.getElementById("denom1").value;
     numer2 = +document.getElementById("numer2").value;
     denom2 = +document.getElementById("denom2").value;
-    frac1 = Fraction(numer1, denom1);
-    frac2 = Fraction(numer2, denom2);
+    frac1 = fraction(numer1, denom1);
+    frac2 = fraction(numer2, denom2);
     document.getElementById("math-result").innerHTML = division(frac1, frac2);
 });
 
