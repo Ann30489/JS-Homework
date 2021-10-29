@@ -1,0 +1,102 @@
+/* Fonts */
+@font-face {
+  font-family: "Merchant Copy";
+  src: url("../Merchant\ Copy\ Doublesize.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background: linear-gradient(
+    22deg,
+    rgba(67, 155, 191, 1) 14%,
+    rgba(174, 188, 238, 1) 75%
+  );
+  height: 190vh;
+}
+
+h1 {
+  color: #0b2f5c;
+  font-size: 60px;
+  text-align: center;
+  margin: 35px 0 70px 0;
+}
+
+ul {
+  background: url("../receipt.png") 5% 2% no-repeat;
+  background-size: cover;
+  max-height: 610px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: "Merchant Copy", sans serif;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+li {
+  padding: 10px 20px;
+  opacity: 0.8;
+}
+
+li:first-child {
+  margin-top: 225px;
+}
+
+.receipt-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#print-btn {
+  background-color: #102995;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+#info-area, #total-area, #info-average {
+  text-align: center;
+  color: #010204;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#expensive-btn,
+#average-btn,
+#sum-btn {
+  background-color: #ef9e17;
+  border: double;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 5px 25px;
+  margin-left: 15px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 40px;
+}

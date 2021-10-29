@@ -1,21 +1,130 @@
-/* Fonts */
-/* @font-face {
-  font-family: 'font name';
-  src: url("#") format("format name");
-  font-style: normal;
-  font-weight: normal;
-} */
-
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
   margin: 0;
 }
 
-img {
-  width: 100%;
-} */
+body {
+  background-image: linear-gradient(
+      105deg,
+      rgba(19, 18, 16, 0.6334908963585435) 34%,
+      rgba(13, 66, 77, 0.6222864145658263) 100%
+    ),
+    url(../grocery-store.jpg);
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  text-align: center;
+  margin: 35px 0 100px 0;
+}
+
+.grocery-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.add-container {
+  display: flex;
+  flex-direction: column;
+}
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#ordered-btn {
+  background-color: #109520;
+  border: 2px solid green;
+  border: double;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+#shop-list {
+  color: rgb(1 212 202);
+  font-size: 25px;
+}
+
+#info-area {
+  text-align: center;
+  color: #fff700;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+label {
+  margin: 5px;
+  color: #39df8a;
+  font-weight: 700;
+}
+
+.buy-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.add-container > input {
+  outline: none;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 260px;
+}
+
+.buy-container > input {
+  outline: none;
+  height: 40px;
+  width: 260px;
+}
+
+input[type="number"],
+input[type="text"] {
+  font-size: 20px;
+  font-weight: 700;
+  padding-left: 5px;
+  border-radius: 8px;
+}
+
+ul {
+  max-height: 280px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#add-btn {
+  background-color: #ef9e17;
+  border: double;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 15px 25px;
+  margin-bottom: 40px;
+}
+
+#buy-btn {
+  background-color: #ef9e17;
+  border: double;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 5px 25px;
+  margin-left: 15px;
+}

@@ -11,7 +11,31 @@
   </head>
   <body>
     <div class="container">
-      <ul id="shop-list"></ul>
+      <h1>Grocery Store</h1>
+      <p id="info-area"></p>
+      <div class="grocery-wrapper">
+        <div class="list-container">
+          <button id="ordered-btn" type="button">Show list</button>
+          <ul id="shop-list"></ul>
+        </div>
+        <div class="add-container">
+          <label for="name">Product name (with a capital letter)</label>
+          <input type="text" id="name" autocomplete="off" />
+          <label for="amount">Product amount</label>
+          <input type="number" id="quantity" autocomplete="off" />
+          <label for="status">Purchased vs not purchased</label>
+          <input type="text" id="purchased" autocomplete="off" />
+          <button id="add-btn" type="button">Add</button>
+        </div>
+        <div class="buy-container">
+          <label for="product-name"
+            >Enter product <br />
+            (with a capital letter)</label
+          >
+          <input type="text" id="buy-product" />
+          <button id="buy-btn" type="button">Buy</button>
+        </div>
+      </div>
     </div>
     <script src="./js/script.js"></script>
   </body>
