@@ -47,9 +47,15 @@ label {
 }
 
 button {
+  cursor: pointer;
   border: none;
   border-radius: 8px;
   padding: 10px 15px;
   background-color: grey;
   color: white;
+}
+
+button:hover {
+  background-color: blue;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
