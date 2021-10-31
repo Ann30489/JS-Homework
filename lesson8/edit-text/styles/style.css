@@ -1,0 +1,36 @@
+.content {
+  max-width: 600px;
+  margin: 90px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li {
+  list-style-type: none;
+  color: orange;
+  font-size: 20px;
+}
+
+#view,
+#area {
+  height: 150px;
+  width: 400px;
+  font-size: 25px;
+}
+
+#view {
+  padding: 10px 20px;
+  border: 1px solid black;
+}
+
+#area {
+  display: none;
+  border: 3px solid rgb(0, 174, 255);
+  padding: 10px 20px;
+}
+
+#area:focus {
+  outline: none;
+}
