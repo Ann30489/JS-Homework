@@ -1,0 +1,263 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Bold.ttf") format("truetype"),
+    url("../fonts/Raleway-Heavy.ttf") format("truetype"),
+    url("../fonts/Raleway-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: url("../images/game-background.jpg") 5% 15% no-repeat;
+  background-size: cover;
+}
+
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  stroke-width: 0;
+  stroke: #8d91a3;
+  fill: #8d91a3;
+}
+
+#text-line-upper,
+#text-line-down {
+  stroke-width: 2;
+}
+
+#tabs {
+  max-width: 610px;
+  margin: 140px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-shadow: 13px 17px 27px -2px rgb(9 0 34 / 44%);
+  -moz-box-shadow: 13px 17px 27px -2px rgb(9 0 34 / 44%);
+  box-shadow: 13px 17px 27px -2px rgb(9 0 34 / 44%);
+}
+
+.stars-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.stars-container > img {
+  width: 16px;
+  height: 16px;
+}
+.tabs-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #2b3040;
+  margin: 0;
+  padding: 0;
+}
+.tabs-nav li {
+  margin-top: 30px;
+  list-style: none;
+}
+.tabs-nav a {
+  display: block;
+  padding: 8px 20px 30px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #999;
+}
+.tabs-nav li:first-child {
+  padding-left: 50px;
+}
+
+.tabs-nav li:last-child {
+  padding-right: 35px;
+}
+.tabs-nav a.active {
+  border-bottom: 1px solid #fff;
+  color: white;
+}
+
+.tabs-nav a.active .icon {
+  fill: white;
+  stroke: white;
+}
+
+.tabs-items {
+  background-color: #212534;
+}
+
+.tabs-item {
+  padding: 65px 30px 75px 45px;
+}
+
+/* Circle percentage SVG */
+.single-chart {
+  width: 33%;
+}
+
+.circular-chart {
+  display: block;
+  margin: 0 auto;
+  max-width: 70%;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #787c9b;
+  stroke-width: 1px;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2px;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.green .circle {
+  stroke: url(#gradient);
+  transition: all 0.8s ease-in-out;
+}
+
+.percentage {
+  fill: #aaadbb;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+/* End of SVG */
+
+.content-info {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #b7bacd;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 60px;
+  padding-right: 10px;
+}
+
+h1,
+.title-block > p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+
+h1 {
+  margin-bottom: 8px;
+  margin-top: 0;
+  font-size: 30px;
+}
+
+.title-block > p {
+  font-size: 14px;
+}
+
+.list-item__container > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.list-item__container > a > span {
+  margin-top: 8px;
+}
+#tab-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.discount-info {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #e9ca3e;
+  padding: 0 5px;
+}
+
+.price-number {
+  font-family: "Lato", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  color: white;
+}
+
+.purchase-btn {
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  border-radius: 2px;
+  background-color: #13e28d;
+  padding: 15px 30px;
+}
+
+.purchase-btn:hover {
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #13cf71;
+}
+.price-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.sale-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.text-block__wrapper {
+  padding-left: 55px;
+}
+
+.tabs-item > p {
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+#rating-title,
+#purchase-title {
+  text-align: center;
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: 25px;
+}

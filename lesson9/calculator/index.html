@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="calc-frame">
+        <div id="screen" class="screen">0</div>
+        <div class="buttons">
+          <button class="digit" value="1" type="button">1</button>
+          <button class="digit" value="2" type="button">2</button>
+          <button class="digit" value="3" type="button">3</button>
+          <button class="operator" id="plus" value="+" type="button">+</button>
+          <button class="digit" value="4" type="button">4</button>
+          <button class="digit" value="5" type="button">5</button>
+          <button class="digit" value="6" type="button">6</button>
+          <button class="operator" id="minus" value="-" type="button">-</button>
+          <button class="digit" value="7" type="button">7</button>
+          <button class="digit" value="8" type="button">8</button>
+          <button class="digit" value="9" type="button">9</button>
+          <button class="operator" id="multiply" value="*" type="button">x</button>
+          <button class="digit" value="0" type="button">0</button>
+          <button class="digit" value="." type="button">.</button>
+          <button id="equal">=</button>
+          <button class="operator" id="divide" value="/">&#247;</button>
+        </div>
+        <button id="clear" value="">CLEAR</button>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
