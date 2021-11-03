@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-size: 8vw;
+  text-shadow: 4px 4px 0px #3f7fbf;
+  mix-blend-mode: screen;
+  animation: fadeIn 2.5s linear forwards;
+  margin-bottom: 90px;
+}
+
+.swiper {
+  width: 100%;
+  max-width: 670px;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  position: relative;
+  z-index: 0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #3f7fbf;
+  font-size: 20px;
+}
+
+.swiper-button-prev {
+  left: -10%;
+}
+
+.swiper-button-next {
+  right: -10%;
+}
+
+.swiper-slide {
+  max-height: 340px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
